@@ -6,7 +6,8 @@ jobs:
   update-gist:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
+      - name: Checkout Master
+        uses: actions/checkout@master
       - name: Update gist
         uses: matchai/bird-box@master
         env:
